@@ -1,0 +1,28 @@
+Beams:eCM = 13000.
+
+//Init:showProcesses = off
+//Init:showMultipartonInteractions = off
+//Init:showChangedSettings = off
+//Init:showChangedParticleData = off
+
+//Random:seed = 5
+
+Next:numberShowInfo = 0
+Next:numberShowEvent = 0
+Next:numberShowLHA = 0
+Next:numberShowProcess = 0
+Next:numberCount = 0
+
+HardQCD:all = on
+PhaseSpace:pTHatMin = 500
+PhaseSpace:pTHatMax = 1000
+
+UncertaintyBands:doVariations = on
+UncertaintyBands:List = {
+fsr05 fsr:muRfac=0.5,
+fsr08 fsr:muRfac=0.8,
+fsr09 fsr:muRfac=0.9,
+fsr11 fsr:muRfac=1.1,
+fsr12 fsr:muRfac=1.2,
+fsr20 fsr:muRfac=2.0
+}
